@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+
+#main {
+  width: 1200px;
+  margin: 20px auto 0px;
+}
+header {
+  background: #ccc;
+  margin: 20px auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form{display:flex;align-items: center;}
+form label{margin-right:10px;}
+form input{margin-right:20px;height:30px;}
+form button{width:100px;height:30px;}
+
+ul{display:grid;
+grid-template-columns: repeat(4,1fr);}
