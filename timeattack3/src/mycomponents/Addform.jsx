@@ -11,7 +11,7 @@ const Addform = ({ setTodolist,todolist }) => {
       alert("빈칸 있으면안됩니다.");
       return;
     }
- 
+   
     let newTodolist={
         id:nanoid(),
         title,
