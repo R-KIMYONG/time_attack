@@ -1,0 +1,16 @@
+*{margin:0px;padding:0px;}
+li{list-style: none;}
+
+#main{width:1200px;margin:0px auto;}
+
+header{background:#ccc;}
+nav{display:flex;justify-content: space-between;padding:20px;box-sizing: border-box;}
+
+form{display:flex;align-items: center;margin-top:20px;}
+form label{margin-right:10px;}
+form input{margin-right:20px;height:30px;}
+form button{width:100px;padding:15px 0px;}
+ul{display:grid;grid-template-columns: repeat(4,1fr);gap: 20px;}
+li{border:1px solid #ccc;padding:20px;box-sizing: border-box;}
+li #btn{display:flex;justify-content: space-between;margin-top:20px;}
+li #btn button{width:45%;display:block}
