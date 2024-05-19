@@ -4,7 +4,6 @@ import "./App.css";
 import Addform from "./components/Addform";
 import TodosContainer from "./components/TodosContainer";
 
-
 const App = () => {
   const [todos, setTodos] = useState([]);
   return (
@@ -16,8 +15,8 @@ const App = () => {
         </nav>
       </header>
 
-      <Addform todos={todos} setTodos={setTodos}/>
-      <TodosContainer todos={todos} setTodos={setTodos}/>
+      <Addform todos={todos} setTodos={setTodos} />
+      <TodosContainer todos={todos} setTodos={setTodos} />
     </div>
   );
 };
