@@ -19,7 +19,7 @@ const Todolist = ({ todos, setTodos, isWork }) => {
         {todos
           .filter((item) => (isWork ? item.isDone : !item.isDone))
           .map((item) => (
-            <li id={item.id}>
+            <li id={item.id} key={item.id}>
               <h3>{item.title}</h3>
               <h3>{item.content}</h3>
               <div>
