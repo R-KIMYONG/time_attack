@@ -15,7 +15,7 @@ const App = () => {
           <h3>React</h3>
         </nav>
       </header>
-      <Addform todos={todos} setTodos={setTodos} />
+      <Addform setTodos={setTodos} />
       <Todoscontainer todos={todos} setTodos={setTodos}/>
     </div>
   );

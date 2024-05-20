@@ -1,15 +1,14 @@
 const Todolist = ({ todos, setTodos, iswork }) => {
   const handleToggletodo = (itemId) => {
-    const updateTodos = todos.map((item) =>
-      item.id === itemId ? { ...item, isDone: !item.isDone } : item
+    setTodos((prev) =>
+      prev.map((item) =>
+        item.id === itemId ? { ...item, isDone: !item.isDone } : item
+      )
     );
-    setTodos(updateTodos);
   };
 
   const handleDeltodo = (itemId) => {
-    const updateTodos = todos.filter((item) => item.id !== itemId);
-
-    setTodos(updateTodos);
+    setTodos((prev) => prev.filter((item) => item.id !== itemId));
   };
 
   return (

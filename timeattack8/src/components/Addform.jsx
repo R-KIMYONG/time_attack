@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
-const Addform = ({ todos, setTodos }) => {
+const Addform = ({ setTodos }) => {
   const [title, setTitle] = useState("");
   const [contents, setContents] = useState("");
 
@@ -18,7 +18,8 @@ const Addform = ({ todos, setTodos }) => {
       contents,
       isDone: false,
     };
-    setTodos([...todos, newTodos]);
+    // setTodos([...todos, newTodos]);
+    setTodos((prev)=>[...prev,newTodos])
     setTitle("");
     setContents("");
   };
